@@ -130,18 +130,18 @@ const invoices = [
 ];
 
 const revenue = [
-  { month: 'Jan', revenue: 2000 },
-  { month: 'Feb', revenue: 1800 },
-  { month: 'Mar', revenue: 2200 },
-  { month: 'Apr', revenue: 2500 },
-  { month: 'May', revenue: 2300 },
-  { month: 'Jun', revenue: 3200 },
-  { month: 'Jul', revenue: 3500 },
-  { month: 'Aug', revenue: 3700 },
-  { month: 'Sep', revenue: 2500 },
-  { month: 'Oct', revenue: 2800 },
-  { month: 'Nov', revenue: 3000 },
-  { month: 'Dec', revenue: 4800 },
+  { month: 'Jan', revenue: 2000, id: 'd6e15727-9fe1-4961-8c5b-ea44a9bd81aa'},
+  { month: 'Feb', revenue: 1800, id: '13D07535-C59E-4157-A011-F8D2EF4E0CBB'},
+  { month: 'Mar', revenue: 2200, id: 'CC27C14A-0ACF-4F4A-A6C9-D45682C144B9'},
+  { month: 'Apr', revenue: 2500, id: '76d65c26-f784-44a2-ac19-586678f7c2f2'},
+  { month: 'May', revenue: 2300, id: '3958dc9e-742f-4377-85e9-fec4b6a6442a'},
+  { month: 'Jun', revenue: 3200, id: '3958dc9e-742f-4377-85e9-586678f7c2f2'},
+  { month: 'Jul', revenue: 3500, id: 'CC27C14A-0ACF-4F4A-A6C9-ea44a9bd81aa'},
+  { month: 'Aug', revenue: 3700, id: '76d65c26-0ACF-4377-A6C9-ea44a9bd81aa'},
+  { month: 'Sep', revenue: 2500, id: '13D07535-C59E-4157-A011-586678f7c2f2'},
+  { month: 'Oct', revenue: 2800, id: 'CC27C14A-9fe1-4961-8c5b-ea44a9bd81aa'},
+  { month: 'Nov', revenue: 3000, id: 'CC27C14A-742f-4377-A011-fec4b6a6442a'},
+  { month: 'Dec', revenue: 4800, id: '13D07535-742f-4157-ac19-586678f7c2f2'},
 ];
 
 export { users, customers, invoices, revenue };

@@ -83,6 +83,7 @@ async function seedCustomers() {
 async function seedRevenue() {
   await sql`
     CREATE TABLE IF NOT EXISTS revenue (
+      id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
       month VARCHAR(4) NOT NULL UNIQUE,
       revenue INT NOT NULL
     );
@@ -91,8 +92,8 @@ async function seedRevenue() {
   const insertedRevenue = await Promise.all(
     revenue.map(
       (rev) => sql`
-        INSERT INTO revenue (month, revenue)
-        VALUES (${rev.month}, ${rev.revenue})
+        INSERT INTO revenue (id, month, revenue)
+        VALUES (${rev.id} ,${rev.month}, ${rev.revenue})
         ON CONFLICT (month) DO NOTHING;
       `,
     ),
